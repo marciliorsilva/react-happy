@@ -8,7 +8,7 @@ function App() {
   return (
     <div id="page-landing">
       <div className="content-wrapper">
-        <img src={logoImg} alt=""/>
+        <img className="logo" src={logoImg} alt=""/>
 
         <main>
           <h1>Leve felecidade para o mundo</h1>

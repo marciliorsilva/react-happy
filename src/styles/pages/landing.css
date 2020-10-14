@@ -9,9 +9,11 @@
 
 #page-landing .content-wrapper{
     position: relative;
-    
+
     width:100%;
-    max-width: 1188px;
+    max-width: 1100px;
+
+    padding: 60px 0px;
 
     height: 100%;
     max-height: 688px;
@@ -21,34 +23,38 @@
     flex-direction: column;
     justify-content: space-between;
 
-    background: url('../../images/group.svg') no-repeat 80% center;
+    background: url('../../images/group.svg') no-repeat 70% center;
+    background-size: 470px;
+}
+
+#page-landing .content-wrapper img{
+    width:200px;
 }
 
 #page-landing .content-wrapper main{
-    max-width: 350px;
-   
+    max-width: 300px;
 }
 
 #page-landing .content-wrapper main h1{
   
-    font-size: 76px;
+    font-size: 7.0rem;
     font-weight: 900;
-    line-height: 78px;
+    line-height: 6.0rem;
 }
 
 #page-landing .content-wrapper main p{
     margin-top: 40px;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 2.2rem;
+    line-height: 3.4rem;
 }
 
 .content-wrapper .location{
      position: absolute;
-     right: 0;
-     top:0;
+     right: 0px;
+     top:60px;
 
-     font-size: 24px;
-     line-height: 34px;
+     font-size: 2.4rem;
+     line-height: 3.4rem;
 
      display: flex;
      flex-direction: column;
@@ -63,14 +69,14 @@
 
  .content-wrapper .enter-app{
      position: absolute;
-     right: 0;
-     bottom: 0;
+     right: 0px;
+     bottom: 60px;
 
-     width:80px;
-     height: 80px;
+     width:65px;
+     height: 65px;
 
      background:#ffd666;
-     border-radius: 30px;
+     border-radius: 20px;
 
      display: flex;
      align-items: center;
@@ -82,3 +88,201 @@
  .content-wrapper .enter-app:hover{
      background:#96FEFF
  }
+
+ @media (max-width: 2560px){
+    #page-landing .content-wrapper{
+        padding:100px 0px 30px; 
+    }
+
+    .content-wrapper .location{
+        right: 0px;
+        top:100px;
+    }
+
+    .content-wrapper .enter-app{
+        right: 0px;
+        bottom: 40px;
+    }
+
+ }
+
+ @media (max-width: 1024px),  (min-width: 1025px) and (max-width: 1150px){
+    #page-landing .content-wrapper{
+        padding:30px 0px 100px 50px;
+        background-size: 420px; 
+    }
+    
+    .content-wrapper .location{
+        right: 50px;
+        top:30px;
+    }
+
+    .content-wrapper .enter-app{
+        right: 50px;
+        bottom: 100px;
+    }
+
+ }
+
+ 
+
+ @media (max-width: 768px){
+    
+
+    #page-landing .content-wrapper{
+        background-size: 340px; 
+        background-position: center top;
+        background-position-y: 100px;
+    }
+
+    #page-landing .content-wrapper main{
+        width: 88vw;
+        max-width: 100vw;
+        text-align: center;
+        
+    }
+
+    #page-landing .content-wrapper main h1{
+        margin-top: 400px;
+        font-size: 4.4rem;
+        font-weight: 900;
+        
+       
+    }
+
+    #page-landing .content-wrapper main p{
+        margin-top:0px;
+        font-size: 2.2rem;
+       
+    }
+
+    .content-wrapper .enter-app{
+        bottom: 0px;
+        right: 20px;
+        width: 95vw; 
+     
+    }
+
+  
+}
+
+/* @media (max-width: 540px){
+
+    #page-landing{
+        height: auto;
+    }
+
+    #page-landing .content-wrapper{
+
+        max-height: 100%;
+        padding-left: 0;
+        
+    }
+
+    #page-landing .content-wrapper .logo{
+
+        padding-left: 20px;
+        
+    }
+
+    #page-landing .content-wrapper main{
+        width:100%; 
+    }
+
+    .content-wrapper .location{
+        
+        top: 30px;
+        right: 20px;
+    }
+
+    
+
+    .content-wrapper .enter-app{
+        position: relative;
+        margin: 0 auto;
+        right: 0;
+        margin-top: 20px;
+        bottom:0;
+        
+       
+     }
+} */
+
+@media (max-width: 425px){
+    #page-landing{
+        height: auto;
+    }
+
+    #page-landing .content-wrapper{
+       
+        background-size: 280px; 
+        background-position: center top;
+        background-position-y: 170px;
+        padding-left: 0;
+        max-height: 100%;
+        
+    }
+    #page-landing .content-wrapper .logo{
+        margin: 0 auto;
+    }
+
+    .content-wrapper .location{
+        width: 70vw;
+        display: flex;
+        align-items:center;
+        top: 100px;
+    }
+
+    #page-landing .content-wrapper main{
+      width:100%; 
+    }
+
+    .content-wrapper .enter-app{
+       position: relative;
+       margin: 0 auto;
+       right: 0;
+       left: 0;
+       top:20px;
+       
+      
+    }
+
+   
+}
+
+@media (max-width: 320px) {
+    .content-wrapper .location strong{
+        font-size: 2.1rem;
+    }
+
+    #page-landing .content-wrapper main h1{
+
+        font-size: 4.0rem;
+        font-weight: 900;
+        line-height: 4.0rem;
+    }
+
+    #page-landing .content-wrapper main p{
+        margin-top: 20px;
+        font-size: 2.2rem;
+        line-height: 3.4rem;
+    }
+    
+
+
+}
+
+@media (max-width: 280px) {
+
+    #page-landing .content-wrapper{
+       
+        background-size: 270px; 
+        background-position: center top;
+        background-position-y: 170px;
+       
+        
+    }
+    .content-wrapper .location strong{
+        font-size: 1.8rem;
+    }
+}
