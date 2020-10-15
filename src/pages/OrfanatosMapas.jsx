@@ -27,18 +27,22 @@ function OrfanatosMapas(){
               
            </aside>
            
-            <Map 
-                center={[-8.0060748,-35.0328706]}
-                zoom={14}
-                style={{width:'100%', height:'100%'}}
-            >
-                {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/> */}
+           
+                <Map 
+                    center={[-8.0060748,-35.0328706]}
+                    zoom={14}
+                    style={{width:'100%', height:'auto'}}
+                >
+                    {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/> */}
 
-                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/>
-                
-            </Map>
+                    <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/>
+                    
+                </Map>
+          
+           
             
-            <Link to="/" className="link-back"> 
+            
+            <Link to="/" className="link-home"> 
                 <FiHome size="32" color="#fff" />
             </Link>
 

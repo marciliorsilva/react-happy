@@ -1,7 +1,6 @@
 #page-map{
     width: 100vw;
     height: 100vh;
-
     position: relative;
     display: flex;
 }
@@ -34,10 +33,11 @@
 }
 
 #page-map aside footer{
+    position: absolute;
     display: flex;
     flex-direction: column;
-
-    line-height:24px;
+    line-height:2.4rem;
+    bottom:10px;
 }
 
 #page-map aside footer strong{
@@ -48,7 +48,7 @@
     z-index: 5;
 }
 
-#page-map  .link-back{
+#page-map  .link-home{
     position: absolute;
 
     right: 40px;
@@ -69,7 +69,7 @@
 
 }
 
-#page-map .link-back:hover{
+#page-map .link-home:hover{
      background:#15c3d6;
 }
 
@@ -98,4 +98,114 @@
     background:#17d6eb;
 
   
+}
+
+
+
+@media (max-width: 1024px){
+    
+    #page-map{
+        height: auto;
+    }
+
+    #page-map aside{
+        height: 700px;
+    }
+    #page-map aside footer{ 
+       
+        bottom:20px;
+    }
+   
+  
+}
+
+@media (max-width: 1024px) and (max-height: 1366px){
+    #page-map{
+        height: auto;
+    }
+    #page-map aside{
+        height: 1366px;
+        padding:40px
+    }
+}
+
+@media (max-width: 768px){
+    #page-map{
+        height: auto;
+    }
+    #page-map aside{
+
+        height: 700px;
+        padding:40px
+    }
+}
+
+@media (max-width: 768px) and (max-height: 1024px){
+    #page-map{
+        height: auto;
+    }
+    #page-map aside{
+        height: 1024px;
+        padding:40px
+    }
+}
+
+@media (max-width: 425px){
+    #page-map {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+     
+       
+    }
+    #page-map aside{
+    
+        width:100%;
+        height: auto;
+        padding:15px;
+ 
+    }
+
+    #page-map aside h2{
+        margin-top: 20px;
+    }
+
+    #page-map aside p{
+        margin-top: 12px;
+        
+    }
+
+    #page-map .leaflet-container{
+        
+        height: 100% !important;
+       
+    }
+
+    #page-map .mapa .leaflet-container{
+        z-index: 5;
+    }
+
+    #page-map  .link-home{
+        top: 12px;
+        right: 12px;
+        
+    }
+
+    #page-map .link-creat{
+        right: 12px;
+    }
+
+
+    #page-map aside footer{
+        color:black;
+        bottom:50px;
+        z-index: 10;
+    }
+  
+}
+
+@media (max-width: 320px){
+    #page-map aside h2{
+        font-size: 3.2rem;
+    }
 }
